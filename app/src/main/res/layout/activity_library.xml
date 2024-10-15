@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryActivity"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--android:layout_marginBottom="?attr/actionBarSize"-->
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mood1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:background="@drawable/gradient5"
+                    android:text="Listen to your mood!!!"
+                    android:textColor="@color/black"
+                    android:textSize="42dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/mood1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="340dp"
+                    android:id="@+id/love"
+                    android:text="Love"
+                    android:textColor="@color/white"
+                    android:textSize="31sp"
+                    android:layout_below="@+id/mood1"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/redgradient"
+                    android:layout_height="100dp">
+                </androidx.appcompat.widget.AppCompatButton>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="340dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/love"
+                    android:id="@+id/sad"
+                    android:text="Sad"
+                    android:textSize="31sp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/blue_red_gradient"
+                    android:layout_height="100dp">
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="340dp"
+                android:layout_below="@+id/sad"
+                    android:id="@+id/happy"
+                    android:text="Happy"
+                    android:textSize="31sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/pinkgradient"
+                android:layout_height="100dp">
+            </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="340dp"
+                    android:id="@+id/rock"
+                android:layout_below="@+id/happy"
+                    android:text="Rock"
+                    android:textSize="31sp"
+                    android:textColor="@color/white"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/purpulgradient"
+                android:layout_height="100dp">
+            </androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:id="@+id/bnView"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/nav_items"
+
+            android:background="@drawable/gradient5">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+
+
+</LinearLayout>

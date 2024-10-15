@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".ReceiptActivity">
+
+    <TextView
+        android:layout_width="322dp"
+        android:layout_height="507dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/gradient5"
+        android:text=" Please be patience while we redirect you to the payment gateway!!! "
+        android:textSize="30sp" />
+</LinearLayout>

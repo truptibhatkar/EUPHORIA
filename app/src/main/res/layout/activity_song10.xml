@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    tools:context=".song10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/despa"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/despacito"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/despacito"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/white_back"
+        android:id="@+id/back"/>
+
+    <ToggleButton
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/despacito"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_baseline_play_circle_outline_24"
+        android:layout_centerInParent="true"
+
+        android:id="@+id/playPauseButton"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/white_forward"
+        android:layout_below="@+id/despacito"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/btnforward"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/back"
+        android:max="100"
+        android:progress="0" />
+</RelativeLayout>
+

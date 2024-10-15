@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity"
+    android:background="@color/BLACK"
+    android:orientation="vertical">
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--android:layout_marginBottom="?attr/actionBarSize"-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:alpha="0.6"
+                android:id="@+id/img"
+                android:background="@drawable/djpic"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="20dp"
+                android:text="Try Our Premium For 1 Month"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_height="100dp"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="330dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/paybtn"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="30dp"
+                android:text="Pay Premium"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="330dp"
+                android:background="@drawable/right2"
+                android:layout_marginTop="390dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="60dp"
+                android:text="Enjoy Offline Music!!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="330dp"
+
+                android:background="@drawable/right2"
+                android:layout_marginTop="450dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="460dp"
+                android:layout_marginLeft="60dp"
+                android:text="Only For 1 Rs Per Day!!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_height="50dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="330dp"
+                android:background="@drawable/right2"
+                android:layout_marginTop="510dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="520dp"
+                android:layout_marginLeft="60dp"
+                android:text="Listen Add Free Music!!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_height="50dp"/>
+        </FrameLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:id="@+id/bnView"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/nav_items"
+
+            android:background="@drawable/gradient5"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

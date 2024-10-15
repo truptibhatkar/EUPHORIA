@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336814945376",
+    "project_id": "euphoria-5dcfb",
+    "storage_bucket": "euphoria-5dcfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336814945376:android:345dbf4cded54be7a77f05",
+        "android_client_info": {
+          "package_name": "com.trup1.euphoria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336814945376-6p5nev3cnps9nhgcing5m2n3bvvmkjnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPt60a8id581dGXjuoQxc6GO4hhoEqKiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336814945376-6p5nev3cnps9nhgcing5m2n3bvvmkjnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

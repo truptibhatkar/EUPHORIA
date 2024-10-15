@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00796B"
+        android:text="Logout"
+
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:cornerRadius="60dp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="533dp"
+        tools:visibility="visible" />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--android:layout_marginBottom="?attr/actionBarSize"-->
+
+    >
+
+    </FrameLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:id="@+id/bnView"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/nav_items"
+
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

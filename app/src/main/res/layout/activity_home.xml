@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/gradient5"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            android:textSize="15sp"
+            tools:visibility="visible" />
+
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/e5"
+            android:id="@+id/newsongimg1"
+            android:layout_marginLeft="20dp"
+            android:layout_above="@+id/txt1"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/txt1"
+            android:textColor="@color/white"
+            android:layout_below="@+id/newsongimg"
+            android:layout_marginLeft="10dp"
+            android:text="New Song By Alan Walker"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/btnlogout"
+            android:textStyle="bold"
+            android:id="@+id/trysomethingnew"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="30dp"
+            android:text="Try Something New"
+      />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/e4"
+            android:layout_marginRight="20dp"
+            android:id="@+id/newsongimg"
+            android:layout_below="@+id/trysomethingnew"
+            android:layout_marginLeft="210dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/newsongimg"
+            android:layout_marginLeft="210dp"
+            android:text="New Song By Rema"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Podcast"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/podcast"
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/podcastimg"
+            android:layout_below="@+id/podcast">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:id="@+id/true_story"
+            android:background="@drawable/e5"/>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/legit_goal"
+            android:background="@drawable/e6"/>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:id="@+id/revenge"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/e7"/>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:id="@+id/strong_heart"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/e8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/podcasttxt"
+            android:layout_below="@+id/podcastimg"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="True story"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:text="Legit Goal"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Revenge"
+            android:layout_marginLeft="38dp"
+
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strong Heart"
+            android:layout_marginLeft="40dp"
+
+            android:textColor="@color/white"/>
+        </LinearLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:id="@+id/bnView1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/nav_items"
+
+            android:background="@drawable/gradient5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artists"
+            android:textSize="25sp"
+            android:id="@+id/artist"
+            android:textStyle="bold"
+            android:layout_below="@id/podcasttxt"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artist"
+            android:id="@+id/artistimg"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/taylor_artist"
+                android:background="@drawable/taylor2"/>
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/arijit_artist"
+                android:background="@drawable/arijit3"/>
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/atif_artist"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/atif"/>
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:id="@+id/selena_artist"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/selena4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/artistimg"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taylor Swift"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Arijit Singh"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atif Aslam"
+                android:layout_marginLeft="38dp"
+
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selena Gomez"
+                android:layout_marginLeft="25dp"
+
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
